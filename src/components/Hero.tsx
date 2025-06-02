@@ -13,26 +13,26 @@ const Hero = () => {
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Python Backend
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Developer
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
             Building scalable web applications with Flask, FastAPI, and modern backend technologies. 
             Currently developing innovative EdTech solutions.
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button variant="outline" size="lg" className="bg-transparent border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300">
+          <Button variant="outline" size="lg" className="bg-transparent border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition-all duration-300 font-medium">
             <Github className="w-5 h-5 mr-2" />
             GitHub
           </Button>
-          <Button variant="outline" size="lg" className="bg-transparent border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white transition-all duration-300">
+          <Button variant="outline" size="lg" className="bg-transparent border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300 font-medium">
             <Linkedin className="w-5 h-5 mr-2" />
             LinkedIn
           </Button>
-          <Button variant="outline" size="lg" className="bg-transparent border-green-400 text-green-400 hover:bg-green-400 hover:text-white transition-all duration-300">
+          <Button variant="outline" size="lg" className="bg-transparent border-slate-400 text-slate-300 hover:bg-slate-500 hover:text-white transition-all duration-300 font-medium">
             <Mail className="w-5 h-5 mr-2" />
             Contact
           </Button>
@@ -41,16 +41,17 @@ const Hero = () => {
         <Button 
           onClick={scrollToProjects}
           size="lg" 
-          className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0 animate-pulse"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 font-medium px-8"
         >
           View My Work
           <ArrowDown className="w-5 h-5 ml-2" />
         </Button>
       </div>
 
-      {/* Floating elements for visual interest */}
-      <div className="absolute top-1/4 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+      {/* Refined floating elements */}
+      <div className="absolute top-1/4 left-10 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-blue-400/5 rounded-full blur-xl"></div>
     </section>
   );
 };

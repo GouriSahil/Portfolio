@@ -11,12 +11,15 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center px-4 relative">
       <div className="text-center max-w-4xl mx-auto">
         <div className="mb-8">
+          <p className="text-lg md:text-xl text-slate-400 mb-4 font-medium">Hello, I'm</p>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Python Backend
-            <span className="block bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-              Developer
-            </span>
+            Alex Johnson
           </h1>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Python Backend Developer
+            </span>
+          </h2>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
             Building scalable web applications with Flask, FastAPI, and modern backend technologies. 
             Currently developing innovative EdTech solutions.

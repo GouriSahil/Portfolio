@@ -1,4 +1,3 @@
-
 import { Mail, Send, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +5,23 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('subject');
+    const message = formData.get('message');
+
+    const mailtoLink = `mailto:gourisahil9593@gmail.com?subject=${encodeURIComponent(
+      `${subject || 'Contact from Portfolio'}`
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -32,7 +48,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-slate-300">your.email@example.com</p>
+                  <p className="text-slate-300">gourisahil9593@gmail.com</p>
                 </div>
               </div>
 
@@ -42,7 +58,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Location</h3>
-                  <p className="text-slate-300">Open to remote & on-site opportunities</p>
+                  <p className="text-slate-300">Surat, Gujarat, India</p>
+                  <p className="text-slate-300 text-sm">Open to remote & on-site opportunities</p>
                 </div>
               </div>
 
@@ -86,26 +103,34 @@ const Contact = () => {
               <CardTitle className="text-white text-2xl">Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input 
+                    name="name"
                     placeholder="Your Name" 
                     className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
+                    required
                   />
                   <Input 
+                    name="email"
                     type="email" 
                     placeholder="Your Email" 
                     className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
+                    required
                   />
                 </div>
                 <Input 
+                  name="subject"
                   placeholder="Subject" 
                   className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
+                  required
                 />
                 <Textarea 
+                  name="message"
                   placeholder="Your Message" 
                   rows={5}
                   className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20 resize-none"
+                  required
                 />
                 <Button 
                   type="submit" 

@@ -7,25 +7,25 @@ const Skills = () => {
     {
       title: "Backend Frameworks",
       icon: <Server className="w-8 h-8" />,
-      skills: ["Flask", "FastAPI", "Django", "SQLAlchemy"],
+      skills: ["Flask", "FastAPI", "SQLAlchemy"],
       color: "from-blue-500 to-blue-600"
     },
     {
       title: "Programming Languages",
       icon: <Code className="w-8 h-8" />,
-      skills: ["Python", "JavaScript", "SQL", "HTML/CSS"],
+      skills: ["Python", "SQL", "HTML/CSS"],
       color: "from-purple-500 to-purple-600"
     },
     {
       title: "Databases",
       icon: <Database className="w-8 h-8" />,
-      skills: ["PostgreSQL", "MySQL", "SQLite", "Redis"],
+      skills: ["MySQL", "SQLite"],
       color: "from-blue-600 to-purple-500"
     },
     {
       title: "Tools & Technologies",
       icon: <Zap className="w-8 h-8" />,
-      skills: ["Git", "Docker", "REST APIs", "Authentication"],
+      skills: ["Git", "REST APIs", "Authentication"],
       color: "from-purple-600 to-blue-500"
     },
     {

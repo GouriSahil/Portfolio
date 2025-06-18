@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Calendar } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ const Projects = () => {
     {
       title: "Trello Clone",
       description: "A full-featured project management application built with Flask and FastAPI, featuring real-time collaboration, drag-and-drop functionality, and user authentication.",
-      technologies: ["Flask", "FastAPI", "SQLAlchemy", "PostgreSQL", "Authentication", "REST APIs"],
+      technologies: ["Flask", "FastAPI", "SQLAlchemy","Database Design", "Authentication", "REST APIs"],
       features: [
         "Real-time board collaboration",
         "Drag & drop card management", 
@@ -24,13 +23,12 @@ const Projects = () => {
     {
       title: "EdTech Learning Platform",
       description: "An innovative educational technology platform designed to help students learn more effectively through interactive features and progress tracking.",
-      technologies: ["Python", "Flask", "Database Design", "User Management", "Progress Tracking"],
+      technologies: ["Python", "Flask", "User Management", "REST APIs", "OpenAI API"],
       features: [
-        "Interactive learning modules",
-        "Student progress tracking",
-        "User management system",
-        "Content delivery system",
-        "Performance analytics"
+        "AI-powered PDF & YouTube content summarization",
+      "Interactive flashcard generation system",
+      "Automated quiz creation from learning materials",
+      "Visual mind map generation for better understanding"
       ],
       status: "In Development",
       year: "2024",
@@ -107,20 +105,11 @@ const Projects = () => {
                     variant="outline" 
                     size="sm"
                     className="bg-transparent border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition-all duration-300 font-medium"
+                    onClick={() => window.open('https://github.com/GouriSahil', '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
                     View Code
                   </Button>
-                  {project.status === "Completed" && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="bg-transparent border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300 font-medium"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </Button>
-                  )}
                 </div>
               </CardContent>
             </Card>

@@ -53,9 +53,9 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                {/* <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                   <MapPin className="w-6 h-6 text-white" />
-                </div>
+                </div> */}
                 {/* <div>
                   <h3 className="text-white font-semibold">Location</h3>
                   <p className="text-slate-300">Surat, Gujarat, India</p>

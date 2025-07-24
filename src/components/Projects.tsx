@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "EdTech Learning Platform",
       description: "An innovative educational technology platform designed to help students learn more effectively through interactive features and progress tracking.",
-      technologies: ["Python", "Flask", "User Management", "REST APIs", "OpenAI API"],
+      technologies: ["Python", "Flask", "User Management", "REST APIs", "OpenAI API",],
       features: [
         "AI-powered PDF & YouTube content summarization",
       "Interactive flashcard generation system",

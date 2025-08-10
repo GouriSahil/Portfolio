@@ -4,7 +4,7 @@
 
 ## 🎯 About Me
 
-I'm a dedicated Python Backend Developer with a strong foundation in modern web development. I specialize in building scalable and efficient backend solutions using Python, with a focus on creating robust APIs and managing databases. My goal is to leverage my expertise to develop impactful applications that solve real-world problems.
+I'm a dedicated Python Backend Developer with a strong foundation in modern web development. Currently pursuing my **3rd year in Bachelor's of Engineering in Information Technology (IT)**.I specialize in building scalable and efficient backend solutions using Python, with a focus on creating robust APIs and managing databases. My goal is to leverage my expertise to develop impactful applications that solve real-world problems.
 
 Currently developing innovative EdTech solutions and actively seeking internship and part-time opportunities in backend development.
 
@@ -77,7 +77,7 @@ An innovative educational technology platform designed to help students learn mo
 
 ## 🎯 What I'm Looking For
 
-I'm actively seeking **internship and full-time opportunities** in backend development. I'm passionate about:
+I'm actively seeking **internship and part-time opportunities** in backend development. I'm passionate about:
 - Building scalable web applications
 - Learning new technologies
 - Contributing to meaningful projects

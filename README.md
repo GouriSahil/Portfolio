@@ -1,102 +1,90 @@
-# Sahil's Portfolio Website
+# Sahil Gouri - Python Backend Developer
 
-A modern, responsive portfolio website showcasing my skills and experience as a Python Backend Developer. Built with React, TypeScript, and Tailwind CSS for optimal performance and user experience.
+👨‍💻 **Backend Developer** passionate about building scalable, efficient web applications with Python.
 
-## 🚀 Features
+## 🎯 About Me
 
-- **Responsive Design** - Seamlessly adapts to all screen sizes and devices
-- **Modern Dark Theme** - Clean, professional UI with smooth transitions
-- **Interactive Project Showcase** - Detailed project presentations with live demos
-- **Contact Integration** - Functional contact form with email capabilities
-- **Performance Optimized** - Fast loading times and smooth animations
-- **SEO Friendly** - Optimized for search engines and social media sharing
+I'm a dedicated Python Backend Developer with a strong foundation in modern web development. I specialize in building scalable and efficient backend solutions using Python, with a focus on creating robust APIs and managing databases. My goal is to leverage my expertise to develop impactful applications that solve real-world problems.
 
-## 🛠️ Tech Stack
+Currently developing innovative EdTech solutions and actively seeking internship and part-time opportunities in backend development.
 
-- **Frontend:** React.js, TypeScript
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Build Tool:** Vite (assumed)
+## 🛠️ Technical Skills
 
-## 🔧 Installation & Setup
+### **Backend Frameworks**
+- **Flask** - Building robust web applications
+- **FastAPI** - Developing high-performance APIs
+- **SQLAlchemy** - ORM for efficient database interactions
 
-```bash
-# Clone the repository
-git clone https://github.com/GouriSahil/portfolio.git
+### **Programming Languages**
+- **Python** - Primary language for backend development
+- **SQL** - Database querying and management
+- **HTML/CSS** - Foundational web technologies
 
-# Navigate to project directory
-cd portfolio
+### **Databases**
+- **MySQL** - Relational database management
+- **SQLite** - Lightweight, file-based database
 
-# Install dependencies
-npm install
+### **Web Technologies**
+- **RESTful APIs** - Designing and implementing API endpoints
+- **JSON** - Data interchange format
+- **HTTP/HTTPS** - Secure communication protocols
+- **CORS** - Handling cross-origin resource sharing
 
-# Start development server
-npm run dev
+### **Development Tools**
+- **Git & GitHub** - Version control and collaboration
+- **VS Code** - Integrated development environment
+- **Postman** - API testing and development
+- **Linux** - Operating system for development and deployment
 
-# Build for production
-npm run build
-```
+## 🚀 Featured Projects
 
-## 🌟 Portfolio Sections
+### **Trello Clone** (2024) - Completed
+A full-featured project management application built with Flask and FastAPI, featuring real-time collaboration, drag-and-drop functionality, and user authentication.
 
-- **Hero Section** - Professional introduction and key highlights
-- **About Me** - Background and professional journey
-- **Skills & Technologies** - Technical expertise showcase
-- **Projects Portfolio** - Featured work with detailed descriptions
-- **Experience** - Professional background and achievements
-- **Contact** - Multiple ways to get in touch
-- **Social Links** - Professional networking profiles
+**Key Features:**
+- Real-time board collaboration
+- Drag & drop card management
+- User authentication & authorization
+- RESTful API architecture
+- Database management with SQLAlchemy
 
-## 📂 Project Structure
+**Technologies:** Flask, FastAPI, SQLAlchemy, Database Design, Authentication, REST APIs
 
-```
-portfolio/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   └── utils/
-├── public/
-├── package.json
-└── README.md
-```
+### **EdTech Learning Platform** (2024) - In Development
+An innovative educational technology platform designed to help students learn more effectively through interactive features and progress tracking.
 
-## 🚀 Deployment
+**Key Features:**
+- AI-powered PDF & YouTube content summarization
+- Interactive flashcard generation system
+- Automated quiz creation from learning materials
+- Visual mind map generation for better understanding
 
-This project can be easily deployed on:
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
+**Technologies:** Python, Flask, User Management, REST APIs, OpenAI API
 
-## 📱 Connect With Me
+## 💼 Why Choose Me?
+
+- ✅ **Strong foundation in Python backend development**
+- ✅ **Experience with modern frameworks (Flask, FastAPI)**
+- ✅ **Proven track record with real-world projects**
+- ✅ **Eager to learn and contribute to team success**
+
+## 📱 Get In Touch
 
 - **Email:** [gourisahil9593@gmail.com](mailto:gourisahil9593@gmail.com)
 - **LinkedIn:** [Sahil Gouri](https://linkedin.com/in/sahil-gouri)
 - **GitHub:** [@GouriSahil](https://github.com/GouriSahil)
+- **Portfolio:** [sahilgouri.me](https://sahilgouri.me)
 
+## 🎯 What I'm Looking For
 
-## 🤝 Contributing
+I'm actively seeking **internship and full-time opportunities** in backend development. I'm passionate about:
+- Building scalable web applications
+- Learning new technologies
+- Contributing to meaningful projects
+- Growing with innovative teams
 
-While this is a personal portfolio, I welcome feedback and suggestions! Feel free to:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- **Framer Motion** - For smooth animations and transitions
-- **Lucide React** - For beautiful, consistent icons
-- **Tailwind CSS** - For rapid UI development
-- **React Community** - For excellent documentation and resources
+**Availability:** Available for immediate start
 
 ---
 
-**⭐ Star this repo if you found it helpful!**
-
-*This portfolio template is free to use and modify for your own projects.*
+*Open to remote & on-site opportunities*

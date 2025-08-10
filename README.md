@@ -77,7 +77,7 @@ An innovative educational technology platform designed to help students learn mo
 
 ## 🎯 What I'm Looking For
 
-I'm actively seeking **internship and full-time opportunities** in backend development. I'm passionate about:
+I'm actively seeking **internship and part-time opportunities** in backend development. I'm passionate about:
 - Building scalable web applications
 - Learning new technologies
 - Contributing to meaningful projects

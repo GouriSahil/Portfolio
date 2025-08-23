@@ -6,6 +6,22 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
+      title: "Personal Blog Platform",
+      description: "My journey into web development started here! Built this blog from scratch following Corey Schafer's Flask tutorial, then made it my own by deploying it live with a custom domain. It's amazing how a simple tutorial can turn into something real that people can actually visit and use.",
+      technologies: ["Flask", "Python", "SQLAlchemy", "SQLite", "Jinja2", "Bootstrap", "WTForms"],
+      features: [
+        "Blog creation & management with Flask-WTF forms",
+        "Database handling with SQLAlchemy & SQLite",
+        "Responsive frontend with Bootstrap styling",
+        "Live deployment on Render with custom domain",
+        "Clean, user-friendly interface"
+      ],
+      status: "Live",
+      year: "2024",
+      gradient: "from-green-500 to-teal-600",
+      liveDemo: "https://blogs.sahilgouri.me"
+    },
+    {
       title: "Trello Clone",
       description: "A full-featured project management application built with Flask and FastAPI, featuring real-time collaboration, drag-and-drop functionality, and user authentication.",
       technologies: ["Flask", "FastAPI", "SQLAlchemy","Database Design", "Authentication", "REST APIs"],
@@ -58,8 +74,12 @@ const Projects = () => {
                     <span className="text-slate-400 text-sm">{project.year}</span>
                   </div>
                   <Badge 
-                    variant={project.status === "Completed" ? "default" : "secondary"}
-                    className={project.status === "Completed" ? "bg-blue-500/20 text-blue-300 border-blue-500/30" : "bg-purple-500/20 text-purple-300 border-purple-500/30"}
+                    variant={project.status === "Completed" ? "default" : project.status === "Live" ? "default" : "secondary"}
+                    className={
+                      project.status === "Completed" ? "bg-blue-500/20 text-blue-300 border-blue-500/30" : 
+                      project.status === "Live" ? "bg-green-500/20 text-green-300 border-green-500/30" :
+                      "bg-purple-500/20 text-purple-300 border-purple-500/30"
+                    }
                   >
                     {project.status}
                   </Badge>
@@ -101,6 +121,17 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-3">
+                  {project.liveDemo && (
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="bg-transparent border-green-500 text-green-400 hover:bg-green-500 hover:text-white transition-all duration-300 font-medium"
+                      onClick={() => window.open(project.liveDemo, '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </Button>
+                  )}
                   <Button 
                     variant="outline" 
                     size="sm"

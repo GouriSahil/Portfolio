@@ -17,7 +17,7 @@ const Projects = () => {
         "Clean, user-friendly interface"
       ],
       status: "Live",
-      year: "2024",
+      year: "2025",
       gradient: "from-green-500 to-teal-600",
       liveDemo: "https://blogs.sahilgouri.me"
     },
@@ -33,7 +33,7 @@ const Projects = () => {
         "Database management with SQLAlchemy"
       ],
       status: "Completed",
-      year: "2024",
+      year: "2025",
       gradient: "from-blue-500 to-purple-600"
     },
     {

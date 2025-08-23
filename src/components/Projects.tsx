@@ -47,7 +47,7 @@ const Projects = () => {
       "Visual mind map generation for better understanding"
       ],
       status: "In Development",
-      year: "2024",
+      year: "2025",
       gradient: "from-purple-500 to-blue-600"
     }
   ];

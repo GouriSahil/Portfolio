@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Flask Blog Platform for Python Developersr",
-      description: "My journey into web development started here! Built this blog from scratch following Corey Schafer's Flask tutorial, then made it my own by deploying it live with a custom domain. It's amazing how a simple tutorial can turn into something real that people can actually visit and use.",
+      description: "A blogging platform for Python developers, uniting resources, advice, and experiences in one hub — built from scratch with Flask and deployed live.",
       technologies: ["Flask", "Python", "SQLAlchemy", "SQLite", "Jinja2", "Bootstrap", "WTForms"],
       features: [
         "Blog creation & management with Flask-WTF forms",

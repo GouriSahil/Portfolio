@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
-      title: "Personal Blog Platform",
+      title: "Flask Blog Platform for Python Developersr",
       description: "My journey into web development started here! Built this blog from scratch following Corey Schafer's Flask tutorial, then made it my own by deploying it live with a custom domain. It's amazing how a simple tutorial can turn into something real that people can actually visit and use.",
       technologies: ["Flask", "Python", "SQLAlchemy", "SQLite", "Jinja2", "Bootstrap", "WTForms"],
       features: [
@@ -22,8 +22,8 @@ const Projects = () => {
       liveDemo: "https://blogs.sahilgouri.me"
     },
     {
-      title: "Trello Clone",
-      description: "A full-featured project management application built with Flask and FastAPI, featuring real-time collaboration, drag-and-drop functionality, and user authentication.",
+      title: "Team Task Manager with Real-Time Collaboration",
+      description: "Inspired by Trello, this project management app enables real-time board collaboration with drag-and-drop tasks and secure authentication.",
       technologies: ["Flask", "FastAPI", "SQLAlchemy","Database Design", "Authentication", "REST APIs"],
       features: [
         "Real-time board collaboration",

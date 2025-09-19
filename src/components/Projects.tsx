@@ -36,20 +36,6 @@ const Projects = () => {
       year: "2025",
       gradient: "from-blue-500 to-purple-600"
     },
-    {
-      title: "EdTech Learning Platform",
-      description: "An innovative educational technology platform designed to help students learn more effectively through interactive features and progress tracking.",
-      technologies: ["Python", "Flask", "User Management", "REST APIs", "OpenAI API",],
-      features: [
-        "AI-powered PDF & YouTube content summarization",
-      "Interactive flashcard generation system",
-      "Automated quiz creation from learning materials",
-      "Visual mind map generation for better understanding"
-      ],
-      status: "In Development",
-      year: "2025",
-      gradient: "from-purple-500 to-blue-600"
-    }
   ];
 
   return (

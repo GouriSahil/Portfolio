@@ -23,9 +23,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4" aria-label="Contact Section">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Let's Work Together
           </h2>
@@ -33,7 +33,7 @@ const Contact = () => {
             I'm actively seeking internship and full-time opportunities in backend development. 
             Let's discuss how I can contribute to your team.
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Info */}

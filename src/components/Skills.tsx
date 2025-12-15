@@ -43,16 +43,16 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4" aria-label="Technical Skills Section">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Technical Skills
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Specialized in Python backend development with experience in building scalable web applications
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (

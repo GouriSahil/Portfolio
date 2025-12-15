@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
-      title: "Flask Blog Platform for Python Developersr",
+      title: "Flask Blog Platform for Python Developers",
       description: "A blogging platform for Python developers, uniting resources, advice, and experiences in one hub — built from scratch with Flask and deployed live.",
       technologies: ["Flask", "Python", "SQLAlchemy", "SQLite", "Jinja2", "Bootstrap", "WTForms"],
       features: [
@@ -39,16 +39,16 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4" aria-label="Featured Projects Section">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Featured Projects
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Real-world applications showcasing my backend development expertise
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (

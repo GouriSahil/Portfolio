@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Python Backend Developer
+              Python Backend Engineer 
             </span>
           </h2>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">

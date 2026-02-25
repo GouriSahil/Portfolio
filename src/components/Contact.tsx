@@ -57,7 +57,6 @@ const Contact = () => {
             <div className="space-y-1 text-xs text-[var(--syntax-comment)]">
               <div># currently available</div>
               <div># response time: &lt; 24 hours</div>
-              <div># location: Ahmedabad, India (remote-friendly)</div>
             </div>
           </div>
 

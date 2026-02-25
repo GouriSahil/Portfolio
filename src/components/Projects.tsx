@@ -1,135 +1,53 @@
-import { ExternalLink, Github, Calendar } from "lucide-react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import RepoCard from "@/components/RepoCard";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Flask Blog Platform for Python Developers",
-      description: "A blogging platform for Python developers, uniting resources, advice, and experiences in one hub — built from scratch with Flask and deployed live.",
-      technologies: ["Flask", "Python", "SQLAlchemy", "SQLite", "Jinja2", "Bootstrap", "WTForms"],
-      features: [
-        "Blog creation & management with Flask-WTF forms",
-        "Database handling with SQLAlchemy & SQLite",
-        "Responsive frontend with Bootstrap styling",
-        "Live deployment on Render with custom domain",
-        "Clean, user-friendly interface"
-      ],
+      name: "flask-blog-platform",
+      description:
+        "A blog platform for Python developers, built from scratch with Flask and SQLAlchemy and deployed on Render. Focused on clean CRUD flows, templating with Jinja2, and a simple DX for publishing technical content.",
+      stackLine: "Flask · SQLAlchemy · SQLite · Jinja2",
       status: "Live",
       year: "2025",
-      gradient: "from-green-500 to-teal-600",
-      liveDemo: "https://blogs.sahilgouri.me"
+      liveUrl: "https://blogs.sahilgouri.me",
+      codeUrl: "https://github.com/GouriSahil",
     },
     {
-      title: "Team Task Manager with Real-Time Collaboration",
-      description: "Inspired by Trello, this project management app enables real-time board collaboration with drag-and-drop tasks and secure authentication.",
-      technologies: ["Flask", "FastAPI", "SQLAlchemy","Database Design", "Authentication", "REST APIs"],
-      features: [
-        "Real-time board collaboration",
-        "Drag & drop card management", 
-        "User authentication & authorization",
-        "RESTful API architecture",
-        "Database management with SQLAlchemy"
-      ],
+      name: "team-task-manager",
+      description:
+        "A Trello-inspired board for teams to manage work with drag-and-drop cards and per-user auth. Designed to practice RESTful API patterns, relational schema design, and handling real-time-style updates in a Python stack.",
+      stackLine: "Flask · FastAPI · SQLAlchemy · REST APIs",
       status: "Completed",
       year: "2025",
-      gradient: "from-blue-500 to-purple-600"
+      liveUrl: "",
+      codeUrl: "https://github.com/GouriSahil",
     },
   ];
 
   return (
     <section id="projects" className="py-20 px-4" aria-label="Featured Projects Section">
-      <div className="max-w-6xl mx-auto">
-        <header className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Featured Projects
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8">
+        <header className="mb-4">
+          <h2 className="text-xl md:text-2xl font-semibold text-[var(--syntax-comment)]">
+            // featured_projects
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Real-world applications showcasing my backend development expertise
+          <p className="mt-2 text-sm text-[var(--text-secondary)]">
+            real-world python backend work with live deployments and public code
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-slate-900/50 backdrop-blur-sm border-slate-700/50 hover:bg-slate-800/50 transition-all duration-300 group overflow-hidden hover:border-blue-500/30">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-2">
-                    <Calendar className="w-4 h-4 text-slate-400" />
-                    <span className="text-slate-400 text-sm">{project.year}</span>
-                  </div>
-                  <Badge 
-                    variant={project.status === "Completed" ? "default" : project.status === "Live" ? "default" : "secondary"}
-                    className={
-                      project.status === "Completed" ? "bg-blue-500/20 text-blue-300 border-blue-500/30" : 
-                      project.status === "Live" ? "bg-green-500/20 text-green-300 border-green-500/30" :
-                      "bg-purple-500/20 text-purple-300 border-purple-500/30"
-                    }
-                  >
-                    {project.status}
-                  </Badge>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-slate-300 leading-relaxed">
-                  {project.description}
-                </p>
-              </CardHeader>
-
-              <CardContent>
-                <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Key Features:</h4>
-                  <ul className="space-y-2">
-                    {project.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="text-slate-300 text-sm flex items-center">
-                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 flex-shrink-0"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Technologies Used:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span 
-                        key={techIndex}
-                        className="px-3 py-1.5 bg-slate-800/60 text-slate-300 rounded-lg text-sm hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-200 border border-slate-700/50"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex space-x-3">
-                  {project.liveDemo && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="bg-transparent border-green-500 text-green-400 hover:bg-green-500 hover:text-white transition-all duration-300 font-medium"
-                      onClick={() => window.open(project.liveDemo, '_blank')}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </Button>
-                  )}
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="bg-transparent border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white transition-all duration-300 font-medium"
-                    onClick={() => window.open('https://github.com/GouriSahil', '_blank')}
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    View Code
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <RepoCard
+              key={index}
+              name={projects[index].name}
+              description={projects[index].description}
+              stackLine={projects[index].stackLine}
+              status={projects[index].status as "Live" | "Completed"}
+              year={projects[index].year}
+              liveUrl={projects[index].liveUrl || undefined}
+              codeUrl={projects[index].codeUrl}
+            />
           ))}
         </div>
       </div>

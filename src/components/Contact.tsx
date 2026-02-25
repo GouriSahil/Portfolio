@@ -1,6 +1,4 @@
-import { Mail, Send, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import TerminalWindow from "@/components/TerminalWindow";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -23,125 +21,124 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 px-4" aria-label="Contact Section">
+    <section id="contact" className="py-20 px-4" aria-label="Contact Section">
       <div className="max-w-4xl mx-auto">
-        <header className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Let's Work Together
+        <header className="mb-8">
+          <h2 className="text-xl md:text-2xl font-semibold text-[var(--syntax-comment)]">
+            // contact
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            I'm actively seeking internship and full-time opportunities in backend development. 
-            Let's discuss how I can contribute to your team.
-          </p>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Contact Info */}
-          <Card className="bg-slate-900/50 backdrop-blur-sm border-slate-700/50">
-            <CardHeader>
-              <CardTitle className="text-white text-2xl">Get In Touch</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
+          <div className="space-y-6">
+            <TerminalWindow title="contact.sh">
+              <div className="space-y-4 text-sm md:text-base">
                 <div>
-                  <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-slate-300">gourisahil9593@gmail.com</p>
+                  <span className="mr-2 text-[var(--accent-primary)]">$</span>
+                  <span className="text-[var(--text-primary)]">./contact.sh</span>
+                </div>
+                <div className="space-y-1 text-[var(--text-secondary)]">
+                  <div>
+                    <span className="mr-2">&gt;</span>
+                    <span>
+                      I'm actively seeking junior backend roles and internships.
+                    </span>
+                  </div>
+                  <div>
+                    <span className="mr-2">&gt;</span>
+                    <span>
+                      Both my projects are live. My code is public. Let's talk.
+                    </span>
+                  </div>
                 </div>
               </div>
+            </TerminalWindow>
 
-              <div className="flex items-center space-x-4">
-                {/* <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div> */}
-                {/* <div>
-                  <h3 className="text-white font-semibold">Location</h3>
-                  <p className="text-slate-300">Surat, Gujarat, India</p>
-                  <p className="text-slate-300 text-sm">Open to remote & on-site opportunities</p>
-                </div> */}
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
-                  <Calendar className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-white font-semibold">Availability</h3>
-                  <p className="text-slate-300">Available for immediate start</p>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-slate-700/50">
-                <h3 className="text-white font-semibold mb-4">Why Choose Me?</h3>
-                <ul className="space-y-3 text-slate-300">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></div>
-                    Strong foundation in Python backend development
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mr-3 flex-shrink-0"></div>
-                    Experience with modern frameworks (Flask, FastAPI)
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></div>
-                    Proven track record with real-world projects
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3 flex-shrink-0"></div>
-                    Eager to learn and contribute to team success
-                  </li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+            <div className="space-y-1 text-xs text-[var(--syntax-comment)]">
+              <div># currently available</div>
+              <div># response time: &lt; 24 hours</div>
+              <div># location: Ahmedabad, India (remote-friendly)</div>
+            </div>
+          </div>
 
           {/* Contact Form */}
-          <Card className="bg-slate-900/50 backdrop-blur-sm border-slate-700/50">
-            <CardHeader>
-              <CardTitle className="text-white text-2xl">Send a Message</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input 
+          <div className="rounded-md border border-[var(--bg-overlay)] bg-[var(--bg-surface)] p-6">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-1">
+                  <label
+                    htmlFor="name"
+                    className="text-xs text-[var(--syntax-comment)]"
+                  >
+                    # your name
+                  </label>
+                  <Input
+                    id="name"
                     name="name"
-                    placeholder="Your Name" 
-                    className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
-                    required
-                  />
-                  <Input 
-                    name="email"
-                    type="email" 
-                    placeholder="Your Email" 
-                    className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
+                    placeholder="sahil gouri"
+                    className="bg-[var(--bg-elevated)] border-[var(--bg-overlay)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus-visible:ring-[var(--accent-primary)] focus-visible:border-[var(--accent-primary)]"
                     required
                   />
                 </div>
-                <Input 
-                  name="subject"
-                  placeholder="Subject" 
-                  className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
-                  required
-                />
-                <Textarea 
-                  name="message"
-                  placeholder="Your Message" 
-                  rows={5}
-                  className="bg-slate-800/50 border-slate-600/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20 resize-none"
-                  required
-                />
-                <Button 
-                  type="submit" 
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+                <div className="space-y-1">
+                  <label
+                    htmlFor="email"
+                    className="text-xs text-[var(--syntax-comment)]"
+                  >
+                    # your email
+                  </label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@company.com"
+                    className="bg-[var(--bg-elevated)] border-[var(--bg-overlay)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus-visible:ring-[var(--accent-primary)] focus-visible:border-[var(--accent-primary)]"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <label
+                  htmlFor="subject"
+                  className="text-xs text-[var(--syntax-comment)]"
                 >
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+                  # subject
+                </label>
+                <Input
+                  id="subject"
+                  name="subject"
+                  placeholder="Backend role, project, or question"
+                  className="bg-[var(--bg-elevated)] border-[var(--bg-overlay)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus-visible:ring-[var(--accent-primary)] focus-visible:border-[var(--accent-primary)]"
+                  required
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label
+                  htmlFor="message"
+                  className="text-xs text-[var(--syntax-comment)]"
+                >
+                  # message
+                </label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about the team, problem, or idea you’re working on."
+                  rows={5}
+                  className="bg-[var(--bg-elevated)] border-[var(--bg-overlay)] text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus-visible:ring-[var(--accent-primary)] focus-visible:border-[var(--accent-primary)] resize-none"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="mt-2 w-full rounded-[2px] bg-[var(--accent-primary)] px-4 py-2 text-sm font-medium text-black transition-all duration-200 hover:brightness-110 hover:shadow-[0_0_24px_var(--accent-glow)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-primary)] focus:ring-offset-2 focus:ring-offset-[var(--bg-base)]"
+              >
+                [send message]
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

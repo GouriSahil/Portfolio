@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Geist+Mono:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +51,29 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Terminal / editor theme */
+    --bg-base: #0d1117;
+    --bg-surface: #161b22;
+    --bg-elevated: #21262d;
+    --bg-overlay: #30363d;
+
+    --accent-primary: #39d353;
+    --accent-dim: #1a7f37;
+    --accent-glow: rgba(57, 211, 83, 0.15);
+
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-muted: #484f58;
+    --text-accent: #39d353;
+
+    --syntax-keyword: #ff7b72;
+    --syntax-string: #a5d6ff;
+    --syntax-comment: #8b949e;
+    --syntax-function: #d2a8ff;
+    --syntax-number: #79c0ff;
+
+    --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
   }
 
   .dark {
@@ -97,5 +122,45 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-mono);
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    background-image: radial-gradient(circle, var(--bg-overlay) 1px, transparent 1px);
+    background-size: 24px 24px;
+    cursor: none;
+  }
+
+  ::selection {
+    background: var(--accent-glow);
+    color: var(--text-primary);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-base);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 3px;
+  }
+
+  @keyframes terminal-cursor-blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .terminal-cursor {
+    animation: terminal-cursor-blink 1s step-end infinite;
   }
 }
